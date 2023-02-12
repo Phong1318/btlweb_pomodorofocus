@@ -1,0 +1,212 @@
+.header {
+  min-height: 100vh;
+  background-color: rgb(186, 73, 73);
+  color: white;
+  transition: var(--bgr-first) 1s ease;
+}
+
+.hearder__first {
+  height: 60px;
+  width: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.header__first__logo {
+  display: flex;
+}
+
+.header__pomofocus--text h3 {
+  font-weight: 500;
+  font-size: 20px;
+  transform: translateY(-3px);
+}
+
+.header__pomofocus--icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.header__navbar__list {
+  display: flex;
+}
+
+.header__navbar__list .navbar__list--btn button,
+.btn__custom {
+  padding: 8px 12px;
+  opacity: 0.9;
+  font-size: 13px;
+  border: none;
+  margin-left: 10px;
+  background-color: var(--bgr-btn);
+  color: white;
+  border-radius: 4px;
+  min-width: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navbar__list .navbar__list--btn button:hover,
+.btn__custom:hover {
+  cursor: pointer;
+}
+
+.header__navbar__list .navbar__list--btn button img {
+  width: 16px;
+  height: 16px;
+}
+
+.header__navbar__list .navbar__list--btn button span {
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+.header__navbar__list .navbar__list--btn button:hover span {
+  opacity: 1;
+  animation: hoverAnimation 0.2s ease;
+  cursor: pointer;
+}
+
+.header__navbar__list .navbar__list--btn .btn--text {
+  margin-left: 3px;
+  opacity: 0.8;
+}
+
+/* Header Second */
+
+.hearder__second {
+  max-width: 620px;
+  height: 420px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.header__second__time {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.header__second__time h1 {
+  font-size: 120px;
+}
+
+.header__second__time_focus {
+  width: 480px;
+  height: 330px;
+  background-color: var(--bgr-btn-2);
+  margin: auto;
+  border-radius: 6px;
+  padding: 20px 0px 30px;
+}
+
+.header__second__navbar .list__time__work {
+  display: flex;
+  justify-content: center;
+}
+
+.header__second__navbar .list__time__work li {
+  width: 125px;
+  height: 28px;
+  border-radius: 4px;
+}
+
+.list__time__work li button {
+  font-size: 16px;
+  background-color: unset;
+  height: 100%;
+  margin: auto;
+  padding: 0 20px 0 20px;
+}
+
+.header__second__btn {
+  text-align: center;
+}
+
+.header__second__btn button {
+  cursor: pointer;
+  border: none;
+  margin: 20px 0px 0px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  box-shadow: rgb(235 235 235) 0px 6px 0px;
+  font-family: ArialRounded;
+  font-size: 22px;
+  height: 55px;
+  color: var(--text-color-first);
+  font-weight: bold;
+  width: 200px;
+  background-color: white;
+  transition: color 0.5s ease-in-out 0s;
+}
+
+.header__second__list_task {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Header Third */
+
+.hearder__third {
+  text-align: center;
+  width: 480px;
+  margin: auto;
+}
+
+.hearder__third .create__task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 14px;
+}
+
+.hearder__third .create__task button {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.9;
+  background-color: var(--bgr-btn-2);
+  margin-left: 10px;
+  font-size: 13px;
+  padding: 8px;
+  min-width: auto;
+  border: none;
+}
+
+.hearder__third .create__task img {
+  height: 16px;
+  width: 16px;
+}
+
+.hearder__third .add__task {
+  margin-top: 18px;
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+}
+
+.hearder__third .add__task button {
+  height: 64px;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--bgr-btn-3);
+  font-size: 16px;
+  opacity: 0.8;
+  font-weight: bold;
+  margin: 0;
+}
+
+@keyframes hoverAnimation {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}

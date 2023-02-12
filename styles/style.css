@@ -1,0 +1,49 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgr-first: rgb(186, 73, 73);
+  --bgr-second: rgb(56, 133, 138);
+  --bgr-third: rgb(57, 112, 151);
+  --bgr-btn: rgba(255, 255, 255, 0.2);
+  --bgr-active: rgba(0, 0, 0, 0.15);
+  --bgr-btn-2: rgba(255, 255, 255, 0.1);
+  --bgr-btn-3: rgba(0, 0, 0, 0.1);
+  --text-color-first: rgb(186, 73, 73);
+  --text-color-2: hsl(357, 50%, 22%);
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  margin: 0 !important;
+  padding-left: 0 !important;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn__custom {
+  color: white !important;
+  border: none !important;
+}
+
+.active {
+  font-weight: bold;
+  background-color: var(--bgr-active);
+}
+
+.main {
+}

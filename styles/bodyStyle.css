@@ -1,0 +1,15 @@
+.body {
+  width: 620px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.body .body__title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.body .body__title h1 {
+  color: var(--text-color-2);
+  font-size: 34px;
+}
