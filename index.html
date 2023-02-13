@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/headerStyle.css" />
     <link rel="stylesheet" href="./styles/bodyStyle.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,7 +46,7 @@
           <div class="header__first__navbar">
             <ul class="header__navbar__list">
               <li class="navbar__list--btn">
-                <button class="btn--report">
+                <button class="btn--report" onclick="handleLogin()">
                   <span>
                     <img src="./images/report-icon.png" alt="setting-icon" />
                   </span>
@@ -53,7 +54,7 @@
                 </button>
               </li>
               <li class="navbar__list--btn">
-                <button class="btn--setting">
+                <button class="btn--setting" onclick="handleLogin()">
                   <span>
                     <img src="./images/setting-icon.png" alt="setting-icon" />
                   </span>
@@ -61,7 +62,7 @@
                 </button>
               </li>
               <li class="navbar__list--btn">
-                <button class="btn--login">
+                <button class="btn--login" id="login" onclick="handleLogin()">
                   <span>
                     <img src="./images/user-icon.png" alt="setting-icon" />
                   </span>
@@ -79,13 +80,19 @@
             <div class="header__second__navbar">
               <ul class="list__time__work">
                 <li class="time_pomodo active">
-                  <button class="btn__custom active">Pomodoro</button>
+                  <button class="btn__custom active" onclick="handleLogin()">
+                    Pomodoro
+                  </button>
                 </li>
                 <li class="time_short--break">
-                  <button class="btn__custom">Short Break</button>
+                  <button class="btn__custom" onclick="handleLogin()">
+                    Short Break
+                  </button>
                 </li>
                 <li class="time_long--break">
-                  <button class="btn__custom">Long Break</button>
+                  <button class="btn__custom" onclick="handleLogin()">
+                    Long Break
+                  </button>
                 </li>
               </ul>
             </div>
@@ -97,7 +104,7 @@
 
             <!-- Header Second Button -->
             <div class="header__second__btn">
-              <button>START</button>
+              <button onclick="handleLogin()">START</button>
             </div>
           </div>
 
@@ -148,13 +155,139 @@
         <div class="body__title">
           <h1>An online Pomodoro Timer to boost your productivity</h1>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="body__content content__first">
+          <div class="content__text">What is Pomofocus?</div>
+          <div class="content__space"></div>
+          <div class="content__detail">
+            Pomofocus is a customizable pomodoro timer that works on desktop &
+            mobile browser. The aim of this app is to help you focus on any task
+            you are working on, such as study, writing, or coding. This app is
+            inspired by
+            <a
+              href="https://francescocirillo.com/products/the-pomodoro-technique"
+              target="_blank"
+              >Pomodoro Technique</a
+            >
+            which is a time management method developed by Francesco Cirillo.
+          </div>
+        </div>
+        <div class="body__content content__second">
+          <div class="content__text">What is Pomodoro Technique?</div>
+          <div class="content__space"></div>
+          <div class="content__detail">
+            The Pomodoro Technique is created by Francesco Cirillo for a more
+            productive way to work and study. The technique uses a timer to
+            break down work into intervals, traditionally 25 minutes in length,
+            separated by short breaks. Each interval is known as a pomodoro,
+            from the Italian word for 'tomato', after the tomato-shaped kitchen
+            timer that Cirillo used as a university student. -
+            <a
+              href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+              target="_blank"
+              >Wikipedia</a
+            >
+          </div>
+        </div>
+        <div class="body__content content__third">
+          <div class="content__text">How to use the Pomodoro Timer?</div>
+          <div class="content__space"></div>
+          <ul class="content__list content__detail">
+            <li class="content__list_details">
+              1. <strong>Add tasks</strong> to work on today
+            </li>
+            <li class="content__list_details">
+              2. <strong>Set estimate pomodoros</strong> (1 = 25min of work) for
+              each tasks
+            </li>
+            <li class="content__list_details">
+              3. <strong>Select a task</strong> to work on
+            </li>
+            <li class="content__list_details">
+              4. <strong>Start timer</strong> and focus on the task for 25
+              minutes
+            </li>
+            <li class="content__list_details">
+              5. <strong>Take a break</strong> for 5 minutes when the alarm ring
+            </li>
+            <li class="content__list_details">
+              6. <strong>Iterate</strong> 3-5 until you finish the tasks
+            </li>
+          </ul>
+        </div>
+        <div class="body__content content__fourth">
+          <div class="content__text">Features</div>
+          <div class="content__space"></div>
+          <ul class="content__list content__detail">
+            <li class="content__list_details">
+              <strong>Responsive design</strong> that works with desktop and
+              mobile
+            </li>
+            <li class="content__list_details">
+              <strong>Color transition</strong> o switch moods between work time
+              and rest time
+            </li>
+            <li class="content__list_details">
+              <strong>Audio notification</strong> at the end of a timer period
+            </li>
+            <li class="content__list_details">
+              <strong>Customizable timer</strong> intervals to suit your
+              preference
+            </li>
+          </ul>
+        </div>
+        <div class="body__content content__fifth">
+          <div class="content__text">Download App</div>
+          <div class="content__space"></div>
+          <ul class="content__list content__detail">
+            <li class="content__list_details">
+              <strong style="color: var(--text-color-4)">For macOS</strong> (zip
+              file) *Right click the icon to open
+            </li>
+            <li class="content__list_details">
+              <strong style="color: var(--text-color-4)">For Windows</strong
+              >(file zip)
+            </li>
+          </ul>
+        </div>
       </div>
-      <footer></footer>
+      <footer class="footer">
+        <div class="footer__sitmap" style="margin-bottom: 14px">
+          <ul class="footer__navbar">
+            <li class="footer__navbar_list">
+              <a href="#">HOME</a>
+            </li>
+            <li class="footer__navbar_list">
+              <a href="./component/sitmap/pravicy.html" target="_blank"
+                >PRAVICY</a
+              >
+            </li>
+            <li class="footer__navbar_list">
+              <a href="#">CONTACT</a>
+            </li>
+            <li class="footer__navbar_list">
+              <a href="./component/sitmap/simplePage.html" target="_blank"
+                >SIMPLE PAGE</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__snslink">
+          <img src="./images/facebook-icon.png" alt="facebook" />
+          <img src="./images/twitter-icon.png" alt="twitter" />
+          <img
+            src="./images/stripe-climate-badge-icon.png"
+            alt="strip climate"
+          />
+        </div>
+        <div class="footer__content">
+          Made by
+          <strong style="color: var(--text-color-4); opacity: 0.7"
+            >N13_WEB</strong
+          >
+        </div>
+        <div class="footer__about">©Pomofocus 2023. All Rights Reserved.</div>
+      </footer>
     </main>
   </body>
+  <script src="./script.js"></script>
 </html>

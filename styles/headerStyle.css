@@ -89,6 +89,7 @@
 .header__second__time {
   text-align: center;
   margin-top: 20px;
+  cursor: default;
 }
 
 .header__second__time h1 {

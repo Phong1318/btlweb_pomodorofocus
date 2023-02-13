@@ -14,8 +14,13 @@
   --bgr-active: rgba(0, 0, 0, 0.15);
   --bgr-btn-2: rgba(255, 255, 255, 0.1);
   --bgr-btn-3: rgba(0, 0, 0, 0.1);
+  --bgr-img-1: #999;
   --text-color-first: rgb(186, 73, 73);
   --text-color-2: hsl(357, 50%, 22%);
+  --text-color-3: hsl(357, 12%, 42%);
+  --text-color-4: hsl(2, 66%, 58%);
+  --text-color-5: hsl(357, 8%, 60%);
+  --space-color: #f05b56;
 }
 
 html {
@@ -32,7 +37,7 @@ ul li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .btn__custom {
